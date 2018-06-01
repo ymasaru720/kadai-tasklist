@@ -9,7 +9,7 @@
                 {!! Form::label('status', 'Status') !!}
                 {!! Form::text('status', null, ['class' => 'form-control']) !!}
             </div>
-        {!! Form::submit($submit_msg, ['class' => 'btn btn-primary']) !!}
+        {!! Form::submit($submit_name, ['class' => 'btn btn-primary']) !!}
         {!! Form::close() !!}
     </div>
 </div>

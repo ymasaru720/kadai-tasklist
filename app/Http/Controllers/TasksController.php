@@ -33,6 +33,8 @@ class TasksController extends Controller
         
         return view('tasks.create', [
             'task' => $task,
+            'submit_msg' => 'Create',
+            'request_params' => ['route'=>'tasks.store'],
         ]);
     }
 
@@ -84,6 +86,8 @@ class TasksController extends Controller
         
         return view('tasks.edit', [
             'task' => $task,
+            'submit_msg' => 'Update',
+            'request_params' => ['route' => ['tasks.update', $task->id], 'method' => 'put'],
         ]);
     }
 

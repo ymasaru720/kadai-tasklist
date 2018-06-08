@@ -16,8 +16,10 @@
     </head>
     <body>
         @include('commons.navbar')
-        @include('commons.err')
         
-        @yield('content')
+        <div class="container">
+            @include('commons.error_messages')
+        
+            @yield('content')
     </body>
 </html>

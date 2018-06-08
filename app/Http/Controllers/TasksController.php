@@ -27,6 +27,8 @@ class TasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+   
+   
     public function create()
     {
         $task = new Task;
@@ -98,6 +100,7 @@ class TasksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+   
     public function update(Request $request, $id)
     {
         $this->validate($request, [
